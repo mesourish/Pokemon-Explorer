@@ -32,8 +32,8 @@ A local server (e.g., Python’s http.server or Node.js live-server) to serve th
 Installation
 
 Clone the Repository:
-git clone https://github.com/your-username/pokemon-explorer.git
-cd pokemon-explorer
+git clone https://github.com/mesourish/Pokemon-Explorer.git
+cd Pokemon-Explorer
 
 
 Serve the Application:Use a local server to avoid CORS issues with file:// URLs.
