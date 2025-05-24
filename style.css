@@ -1,0 +1,623 @@
+/* Tailwind CSS base styles (subset for production) */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.bg-gray-900 {
+    background-color: #111827;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-4xl {
+    max-width: 64rem;
+}
+
+.max-w-md {
+    max-width: 28rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-yellow-300 {
+    color: #facc15;
+}
+
+.text-red-500 {
+    color: #ef4444;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.bg-gray-800 {
+    background-color: #1f2937;
+}
+
+.focus\:outline-none:focus {
+    outline: none;
+}
+
+.focus\:ring-2:focus {
+    --tw-ring-offset-width: 2px;
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+.focus\:ring-yellow-300:focus {
+    --tw-ring-color: #facc15;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.max-h-48 {
+    max-height: 12rem;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-opacity-50 {
+    background-opacity: 0.5;
+}
+
+.top-4 {
+    top: 1rem;
+}
+
+.right-4 {
+    right: 1rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.transition-transform {
+    transition-property: transform;
+}
+
+.transition {
+    transition-property: all;
+}
+
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-16 {
+    width: 4rem;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.w-24 {
+    width: 6rem;
+}
+
+.h-24 {
+    height: 6rem;
+}
+
+.w-32 {
+    width: 8rem;
+}
+
+.h-32 {
+    height: 8rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hover\:bg-gray-200:hover {
+    background-color: #e5e7eb;
+}
+
+.hover\:text-black:hover {
+    color: #000000;
+}
+
+.hover\:text-yellow-300:hover {
+    color: #facc15;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Media queries for responsive grid */
+@media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Custom styles */
+body {
+    background: radial-gradient(circle at center, #1e3a8a 0%, #111827 70%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="40" fill="%23ffffff10"/%3E%3Ccircle cx="50" cy="50" r="20" fill="%23ff000020"/%3E%3C/svg%3E') repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.pokemon-font {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Add Pokémon DS Font if you have the file */
+/*
+        @font-face {
+            font-family: 'Pokemon DS Font';
+            src: url('/path/to/Pokemon-DS-Font.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .pokemon-font {
+            font-family: 'Pokemon DS Font', 'Press Start 2P', cursive;
+        }
+        */
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.header-gradient {
+    background: linear-gradient(45deg, #facc15, #f87171);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.search-container {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.search-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="40" fill="%23ffffff20"/%3E%3Ccircle cx="50" cy="50" r="20" fill="%23ff000030"/%3E%3C/svg%3E') no-repeat center;
+    opacity: 0.3;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.5);
+    animation: pulse 1.5s infinite;
+}
+
+.autocomplete-item {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.autocomplete-item:hover {
+    border-left: 3px solid #facc15;
+}
+
+.pokemon-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,%3Csvg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="40" fill="%23ffffff10"/%3E%3Ccircle cx="50" cy="50" r="20" fill="%23ff000020"/%3E%3C/svg%3E') repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.pokemon-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-card img {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.type-normal {
+    background: linear-gradient(135deg, #A8A878, #D4D4A8);
+}
+
+.type-fire {
+    background: linear-gradient(135deg, #F08030, #F8B878);
+}
+
+.type-water {
+    background: linear-gradient(135deg, #6890F0, #98D8F8);
+}
+
+.type-grass {
+    background: linear-gradient(135deg, #78C850, #A8F098);
+}
+
+.type-electric {
+    background: linear-gradient(135deg, #F8D030, #FFF098);
+}
+
+.type-ice {
+    background: linear-gradient(135deg, #98D8D8, #C8F0F0);
+}
+
+.type-fighting {
+    background: linear-gradient(135deg, #C03028, #F07870);
+}
+
+.type-poison {
+    background: linear-gradient(135deg, #A040A0, #D878D8);
+}
+
+.type-ground {
+    background: linear-gradient(135deg, #E0C068, #F8E098);
+}
+
+.type-flying {
+    background: linear-gradient(135deg, #A890F0, #D8C8F8);
+}
+
+.type-psychic {
+    background: linear-gradient(135deg, #F85888, #F898B8);
+}
+
+.type-bug {
+    background: linear-gradient(135deg, #A8B820, #D8E068);
+}
+
+.type-rock {
+    background: linear-gradient(135deg, #B8A038, #E0C878);
+}
+
+.type-ghost {
+    background: linear-gradient(135deg, #705898, #A890C8);
+}
+
+.type-dragon {
+    background: linear-gradient(135deg, #7038F8, #A878F8);
+}
+
+.type-dark {
+    background: linear-gradient(135deg, #705848, #A89078);
+}
+
+.type-steel {
+    background: linear-gradient(135deg, #B8B8D0, #E0E0F0);
+}
+
+.type-fairy {
+    background: linear-gradient(135deg, #EE99AC, #F8C8D0);
+}
+
+.card-enter {
+    animation: bounceIn 0.5s ease-in;
+}
+
+.load-more-enter {
+    animation: slideUp 0.5s ease-out;
+}
+
+.modal-enter {
+    animation: fadeInModal 0.3s ease-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content {
+    animation: fadeInModal 0.3s ease-out;
+}
+
+.close-btn {
+    background: linear-gradient(45deg, #ff0000, #ffffff);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="40" fill="%23ff0000"/%3E%3Ccircle cx="50" cy="50" r="40" fill="%23ffffff" transform="rotate(180 50 50)"/%3E%3Ccircle cx="50" cy="50" r="20" fill="%23ffffff"/%3E%3Ccircle cx="50" cy="50" r="10" fill="%23000000"/%3E%3C/svg%3E') no-repeat center;
+    background-size: cover;
+}
+
+#sentinel {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
